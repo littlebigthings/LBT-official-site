@@ -1,0 +1,44 @@
+[wrapper="work-slick-slider"] .slick-slide {
+    transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(50%);
+    -webkit-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(50%);
+    -moz-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(50%);
+    -ms-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(50%);
+    -o-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(50%);
+}
+
+[wrapper="work-slick-slider"] .slick-active {
+    transform: scale3d(1, 1, 1) translateY(0%);
+    -webkit-transform: scale3d(1, 1, 1) translateY(0%);
+    -moz-transform: scale3d(1, 1, 1) translateY(0%);
+    -ms-transform: scale3d(1, 1, 1) translateY(0%);
+    -o-transform: scale3d(1, 1, 1) translateY(0%);
+}
+
+[wrapper="work-slick-slider"] .slick-active + .slick-slide {
+    transform: scale3d(1, 1, 1) translateY(0%) translateX(50%);
+    -webkit-transform: scale3d(1, 1, 1) translateY(0%) translateX(50%);
+    -moz-transform: scale3d(1, 1, 1) translateY(0%) translateX(50%);
+    -ms-transform: scale3d(1, 1, 1) translateY(0%) translateX(50%);
+    -o-transform: scale3d(1, 1, 1) translateY(0%) translateX(50%);
+}
+
+[wrapper="work-slick-slider"] .slick-active ~ .slick-slide {
+    transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(-50%);
+    -webkit-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(-50%);
+    -moz-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(-50%);
+    -ms-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(-50%);
+    -o-transform: scale3d(0.5, 0.5, 0.5) translateY(50%) translateX(-50%);
+}
+
+
+[wrapper="work-slick-slider"] .slick-slide{
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+[wrapper="work-slick-slider"] .slick-list{
+   overflow: visible !important;
+}

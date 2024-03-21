@@ -1,0 +1,114 @@
+.iti {
+    width: 100%;
+    margin-bottom: 2.777em;
+  }
+  .iti__flag-container {
+    padding: 0px;
+  }
+  .iti--separate-dial-code .iti__selected-flag {
+    background: transparent;
+  }
+  .iti__selected-flag {
+    padding: 1.38em 0 1.38em 1.38em;
+  }
+  .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background: transparent;
+  }
+  .iti__flag.iti__in {
+    box-shadow: none;
+  }
+  
+  .iti--separate-dial-code .iti__selected-dial-code {
+    font-family: Outfit,sans-serif;
+    font-weight: 300;
+    font-size: 0.833333em;
+    line-height: 1.75;
+    position: relative;
+    margin-left: 0.625em !important;
+    padding-left: 0.625em;
+  }
+  .iti--separate-dial-code .iti__selected-dial-code::before {
+    content: "";
+    position: absolute;
+    top: 0em;
+    bottom: 0;
+    left: 0;
+    height: 2em;
+    width: 0.069em;
+    background-color: #545F5F;
+    opacity: 0.5;
+  }
+  .iti__arrow {
+    display: none;
+  }
+  .iti__country-list {
+    max-width: 20.83em;
+    max-height: 18.26em;
+    padding: 0.9em 0.9em 1.31em 1.04em;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.11em 0 0 1.11em;
+    margin-top: 0.2em;
+    overflow-x: hidden;
+    border: none;
+  }
+  
+  .iti__country-list::-webkit-scrollbar {
+  width:4px;
+  }
+  /*track*/
+  .iti__country-list::-webkit-scrollbar-track {
+  background:#EAEAEA;
+  border-radius:4px;
+  }
+  /*thumb*/
+  .iti__country-list::-webkit-scrollbar-thumb {
+  background:#BBBBBB;
+  border-radius:4px;
+  }
+  
+  .iti__country.iti__highlight {
+    background: #fafafa;
+    border-radius: 8px;
+  }
+  
+  .iti__divider {
+    margin: 0.92em 0;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0;
+  }
+  .iti__country {
+    padding: 6px 5px;
+  }
+  .iti__flag-box,
+  .iti__country-name,
+  .iti__dial-code {
+    font-family: Outfit,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.11em;
+    line-height: 1.75;
+    color: #545F5F;
+  }
+  .iti__dial-code{
+      color: #545F5F;
+  }
+
+  @media only screen and (max-width:768px) {
+    .iti--separate-dial-code .iti__selected-dial-code {
+        font-weight: 300;
+        font-size: 1.55556em;
+        line-height: 1.75;
+        padding-top: 0.2em;
+      }
+      .iti--separate-dial-code .iti__selected-dial-code::before{
+        top:0.38em;
+        height: 1.5em;
+      }
+      
+      .iti__flag-box,
+      .iti__country-name,
+      .iti__dial-code {
+        font-size: 1.55556em;
+      }
+  }
